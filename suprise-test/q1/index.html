@@ -1,0 +1,20 @@
+<script>
+    //Reverse a String
+
+    let str='Red and white';
+    console.log("Length of string :"+str.length);
+    console.log("Original String: "+str);
+    
+
+    function revString(word){
+        let rev='';
+        for(let i=word.length-1;i>=0;i--){
+            rev+=word[i];
+        }
+        return rev;
+    }
+    console.log(revString(str));
+    
+    
+    
+</script>

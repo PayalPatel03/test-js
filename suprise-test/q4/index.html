@@ -1,0 +1,26 @@
+<script>
+    // Student Grade Calculator
+    let avg = parseInt(prompt("Enter your score!!"));
+    let marks;
+
+    let gradeCalc = (average) => {
+        if (average>100) {
+            marks = "Invalid marks";
+        } else if (average >= 90) {
+            marks = "A";
+        } else if (average >= 80) {
+            marks = "B";
+        } else if (average >= 70) {
+            marks = "C";
+        } else if (average >= 60) {
+            marks = "D";
+        } else {
+            marks = "Fail";
+        }
+    }
+
+    gradeCalc(avg); 
+    console.log("Average is", avg); 
+    console.log("Grade is", marks);
+</script>
+
