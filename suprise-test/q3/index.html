@@ -1,20 +1,16 @@
 <script>
-    //Count Vowels in a String 
-    let inputString="Javascript";
+    //count the number of vowels in stirng
+    const str = "jAvascrIpt";
+    let count = 0;
 
-    let countVowels=(vowels)=>{
-        let vowel='aeiou';
-        let count=0;
-        for(let i=0;i>=0;i++){
-            if(vowels.includes(char)){
-                count++;
-         }
+    for (i = 0; i < str.length; i++) {
+        if (str[i] === 'a' || str[i] === 'A' ||
+            str[i] === 'e' || str[i] === 'E' ||
+            str[i] === 'i' || str[i] === 'I' ||
+            str[i] === 'o' || str[i] === 'O' ||
+            str[i] === 'u' || str[i] === 'U') {
+            count++;
         }
     }
-    let vowelCount=countVowels(inputString);
-    console.log(vowelCount);
-    
-    
-    
-
+    console.log("Number of vowels: " + count);
 </script>
